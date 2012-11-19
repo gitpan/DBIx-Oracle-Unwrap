@@ -1,6 +1,8 @@
 Revision history for DBIx-Oracle-Unwrap
 
-0.02    20-Nov-2012
+0.04    20-Nov-2012
+        Whoops. Bumped the version numbers
+0.03    20-Nov-2012
         Updated README
 0.02    19-Nov-2012
         Minor documentation update
