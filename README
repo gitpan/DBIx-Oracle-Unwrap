@@ -33,7 +33,12 @@ You can also look for information at:
 
 LICENSE AND COPYRIGHT
 
-Copyright (C) 2012 Redbone Systems Ltd.
+Copyright 2012 Dan Horne
+
+This Perl implementation is based on Python code by Niels Teusink, 2010
+Unwrapping Oracle PL/SQL with unwrap.py:
+
+http://blog.teusink.net/2010/04/unwrapping-oracle-plsql-with-unwrappy.html
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the the Artistic License (2.0). You may obtain a
