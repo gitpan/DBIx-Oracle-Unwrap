@@ -15,7 +15,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -36,15 +36,14 @@ How to unwrap code in the database.
     use DBI;
     
     my $dbh = DBI::Oracle->connect(
-        'DBI:Oracle:orcl', 'system', '<password>'
+        'DBI:Oracle:orcl', 'scott', 'tiger'
     );
     
     my $source_sql = q/
         SELECT text
-        FROM   dba_source
-        WHERE  name = 'DBMS_SQL'
+        FROM   user_source
+        WHERE  name = 'MYPACKAGE'
         AND    type = 'PACKAGE BODY'
-        AND    owner = 'SYS' 
         ORDER  BY line
     /;
     
