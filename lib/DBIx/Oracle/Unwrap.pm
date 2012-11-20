@@ -11,11 +11,11 @@ DBIx::Oracle::Unwrap - Unwrap code obsfuscated with the Oracle wrap command
 
 =head1 VERSION
 
-Version 0.04
+Version 0.05
 
 =cut
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 SYNOPSIS
 
@@ -35,9 +35,7 @@ How to unwrap code in the database.
     use DBIx::Oracle::Unwrap;
     use DBI;
     
-    my $dbh = DBI::Oracle->connect(
-        'DBI:Oracle:orcl', 'scott', 'tiger'
-    );
+    my $dbh = DBI->connect('DBI:Oracle:orcl', 'scott', 'tiger');
     
     my $source_sql = q/
         SELECT text
