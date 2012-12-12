@@ -7,21 +7,21 @@ use File::Slurp;
 
 =head1 NAME
 
-DBIx::Oracle::Unwrap - Unwrap code obsfuscated with the Oracle wrap command
+DBIx::Oracle::Unwrap - Unwrap code obfuscated with the Oracle wrap command
 
 =head1 VERSION
 
-Version 0.05
+Version 0.06
 
 =cut
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 =head1 SYNOPSIS
 
-This class unwraps text that has been obsfuscated using the wrap utiltity
+This class unwraps text that has been obfuscated using the wrap utiltity
 supplied with version 10 of Oracle and above. Note that it does not unwrap
-text from earlier versions, as the method of obsfuscation is different
+text from earlier versions, as the method of obfuscation is different
 
 How to unwrap code in a file
 
@@ -165,7 +165,7 @@ sub unwrap_file {
 =head1 SEE ALSO
 
 L<unwrap> is a script supplied with this distribution that will
-unwrap obsfuscated files. It writes to STDOUT, so redirect to
+unwrap obfuscated files. It writes to STDOUT, so redirect to
 a file if you want to keep the output
 
     unwrap mysource.plb > unwrapped.plb
